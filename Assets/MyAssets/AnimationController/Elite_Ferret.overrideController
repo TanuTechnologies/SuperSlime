@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Elite_Ferret
+  m_Controller: {fileID: 9100000, guid: d70f356f9170c2e4e8677c8fdaa6cc8c, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 5e0f6aeaf3432264ca02df7473783c3d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ca0eb6e1c0f53bd49b8f6a5fc22299ab, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 88e70186a97b73d4497ec7a116cb8956, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 30771c490981b664e86419f6e81841e5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: db96c83382c4c704396b21654bad3122, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fd60d28314e7feb478853b6edc458a87, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c6c2db434c8f9b94781a1d8b400d205e, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5258ca6a42f0cd74b96f35002682c2f6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 06e9703489f7ef840959289dd5ec8423, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ca94d4ffdde9cf64797dbf2758d5a425, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 56ba6a00e6b09d54ba18719defc40d1f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 29dcf4cf77aeecd47bd08a7e8b613f41, type: 2}

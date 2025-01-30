@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Npc_Mouse
+  m_Controller: {fileID: 9100000, guid: 420549042dfc6e2459aefc73a1a5aeac, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: cd1025af25e8ea249836dd7449199f95, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 17c27d4b4abf7a7498177aeb5f78d30f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1c6b43e5cec63d64a9095d26ec7f596a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9052c3b69af6b3a4b904d610ab12afd6, type: 2}
