@@ -96,7 +96,6 @@ public class AttackItems : MonoBehaviour
         PlayerPrefs.DeleteKey("TimePrice");
 
         AudioManager.Instance.Play("Click");
-        AdsManager.Instance.ShowInterstitialAd();
 
         PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level", 0) + 1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -107,7 +106,6 @@ public class AttackItems : MonoBehaviour
     public void OnClickRetry()
     {
         AudioManager.Instance.Play("Click");
-        AdsManager.Instance.ShowInterstitialAd();
 
         int currentLevelno = PlayerPrefs.GetInt("Level", 0);
         SceneManager.LoadScene(currentLevelno);

@@ -89,7 +89,7 @@ public class GameManager : MonoBehaviour
     {
         AudioManager.Instance.Play("Click");
 
-        AdsManager.Instance.ShowInterstitialAd();
+      
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
@@ -133,7 +133,6 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         AudioManager.Instance.Play("Click");
-        AdsManager.Instance.ShowInterstitialAd();
         PlayerPrefs.SetInt("Level", currentLevelno + 1);
 
         PlayerPrefs.DeleteKey("Size");
@@ -158,7 +157,6 @@ public class GameManager : MonoBehaviour
 
     public void ShowRewardVideo()
     {
-        AdsManager.Instance.ShowRewardedAd();
     }
 
     public void OpenScene(int index)
