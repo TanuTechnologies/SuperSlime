@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public int currentLevelno;
     public Timer timer;
     public bool gameStarted;
+    public Button nextButton;
 
     void Awake()
     {
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        nextButton.onClick.AddListener(Next);
         ItemsManager.Instance.collectedItemsName = new List<string>();
         AudioManager.Instance.audioBtnImage.transform.parent.gameObject.SetActive(true);
         Debug.Log("Level " + PlayerPrefs.GetInt("Level") + 1);
@@ -141,9 +143,8 @@ public class GameManager : MonoBehaviour
 
     public void Next()
     {
-        Debug.Log(SceneManager.GetActiveScene().buildIndex + "fvdjk");
+        Debug.Log("Load" + SceneManager.GetActiveScene().buildIndex + 1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
         AudioManager.Instance.Play("Click");
         PlayerPrefs.SetInt("Level", currentLevelno + 1);
 

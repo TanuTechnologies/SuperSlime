@@ -262,7 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc4cb38321412441ba970c2eadaf5ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 1500
   canWalk: 0
   walkSpeed: 1.2
   collectedItemsCount: 0

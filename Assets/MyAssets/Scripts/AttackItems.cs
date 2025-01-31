@@ -98,7 +98,7 @@ public class AttackItems : MonoBehaviour
         AudioManager.Instance.Play("Click");
 
         PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level", 0) + 1);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("Level") + 1);
         PlayerPrefs.SetInt("BossIndex", PlayerPrefs.GetInt("BossIndex", 0) + 1);
     }
 
