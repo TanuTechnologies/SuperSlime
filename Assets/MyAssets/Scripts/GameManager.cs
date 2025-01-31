@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 using System;
 using System.Collections.Generic;
+using System.Security.Policy;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,18 +17,27 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         Application.targetFrameRate = 60;
+        Debug.Log(PlayerPrefs.GetInt("Level"));
         currentLevelno = PlayerPrefs.GetInt("Level", 0);
-
         if (SceneManager.GetActiveScene().buildIndex != currentLevelno)
             SceneManager.LoadScene(currentLevelno);
 
-        levelText.text = "Level " + currentLevelno+1.ToString();
+        
+    }
+
+    [ContextMenu("cd")]
+    public void de()
+    {
+        PlayerPrefs.DeleteKey("Level");
     }
 
     private void Start()
     {
         ItemsManager.Instance.collectedItemsName = new List<string>();
         AudioManager.Instance.audioBtnImage.transform.parent.gameObject.SetActive(true);
+        Debug.Log("Level " + PlayerPrefs.GetInt("Level") + 1);
+        var s = PlayerPrefs.GetInt("Level") + 1;
+        levelText.text = "Level " + s;
     }
 
     private void Update()
