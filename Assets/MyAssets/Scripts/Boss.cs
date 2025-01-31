@@ -11,7 +11,7 @@ public class Boss : MonoBehaviour
     private Transform cam, player;
     private Animator transitionEffect;
     private GameObject winPanel, retryPanel;
-    private int collectedItemsCount;
+    public int collectedItemsCount;
 
     private void Awake()
     {

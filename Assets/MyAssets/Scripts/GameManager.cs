@@ -141,6 +141,7 @@ public class GameManager : MonoBehaviour
 
     public void Next()
     {
+        Debug.Log(SceneManager.GetActiveScene().buildIndex + "fvdjk");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         AudioManager.Instance.Play("Click");

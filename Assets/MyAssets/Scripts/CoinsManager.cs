@@ -18,7 +18,7 @@ public class CoinsManager : MonoBehaviour
         }
         else
         {
-            PlayerPrefs.SetInt("MoneyAmount",500);
+            PlayerPrefs.SetInt("MoneyAmount",0);
             collectedMoney = PlayerPrefs.GetInt("MoneyAmount");
             Debug.Log("else" + PlayerPrefs.GetInt("MoneyAmount"));
         }

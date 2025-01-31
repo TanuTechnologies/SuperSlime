@@ -75,7 +75,7 @@ public class Timer : MonoBehaviour
             if (GameObject.Find("BonusLevel"))
                 FindObjectOfType<GameManager>().Win();
             else
-                FindObjectOfType<GameManager>().Win();
+                Invoke(nameof(LoadBossScene), 2);
         }
 
         // Display the remaining time in minutes and seconds
