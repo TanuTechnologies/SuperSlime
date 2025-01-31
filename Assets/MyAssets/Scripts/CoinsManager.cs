@@ -11,7 +11,18 @@ public class CoinsManager : MonoBehaviour
 
     private void Start()
     {
-        collectedMoney = PlayerPrefs.GetInt("MoneyAmount", 0);
+        if (PlayerPrefs.HasKey("MoneyAmount"))
+        {
+            Debug.Log("IF  " + PlayerPrefs.GetInt("MoneyAmount"));
+            collectedMoney = PlayerPrefs.GetInt("MoneyAmount");
+        }
+        else
+        {
+            PlayerPrefs.SetInt("MoneyAmount",500);
+            collectedMoney = PlayerPrefs.GetInt("MoneyAmount");
+            Debug.Log("else" + PlayerPrefs.GetInt("MoneyAmount"));
+        }
+        
         ShowAndSave();
     }
 
@@ -24,6 +35,7 @@ public class CoinsManager : MonoBehaviour
     public void AddMoney(int amount)
     {
         collectedMoney += amount;
+        Debug.Log(amount);
         ShowAndSave();
     }
 

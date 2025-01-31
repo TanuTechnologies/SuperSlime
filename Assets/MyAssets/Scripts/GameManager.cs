@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     [ContextMenu("cd")]
     public void de()
     {
+        PlayerPrefs.DeleteKey("MoneyAmount");
         PlayerPrefs.DeleteKey("Level");
     }
 

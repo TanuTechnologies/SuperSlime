@@ -73,8 +73,8 @@ public class CoinsAnimation : MonoBehaviour
 
         if (count == 25)
             CancelInvoke("GiveCoins");
-
-        coinsAmountToAdd = coinsAmount / 25; // Divide total coins by the number of steps
+        Debug.Log("fds" + coinsAmount);
+        coinsAmountToAdd = coinsAmount; // Divide total coins by the number of steps
         FindObjectOfType<CoinsManager>().AddMoney(coinsAmountToAdd);
     }
 
